@@ -1,0 +1,19 @@
+services:
+  portfolio:
+    image: nginx:1.30-alpine
+    container_name: bbauer-portfolio
+    restart: unless-stopped
+    volumes:
+      - ./dist:/usr/share/nginx/html:ro
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.bbauer-portfolio.rule=Host(`bbauer.eu`)"
+      - "traefik.http.routers.bbauer-portfolio.entrypoints=websecure"
+      - "traefik.http.routers.bbauer-portfolio.tls=true"
+      - "traefik.http.services.bbauer-portfolio.loadbalancer.server.port=80"
+
+networks:
+  web:
+    external: true
