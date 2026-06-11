@@ -1,0 +1,194 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Logo from '../components/Logo.astro';
+---
+
+<Layout title="Benedikt Bauer | IT Architect & Developer">
+	<div class="relative min-h-screen">
+		<div 
+			id="logo-container"
+			class="fixed inset-x-0 top-0 flex items-center justify-center -z-10 overflow-hidden pt-8 transition-opacity duration-300 ease-out pointer-events-none"
+		>
+			<Logo className="w-[70vw] md:w-[50vw] max-w-lg" />
+		</div>
+
+		<header class="mb-16 pt-[30vh] md:pt-[35vh]">
+			<h1 class="text-4xl font-semibold tracking-tight mb-2">Benedikt Bauer</h1>
+
+		<p class="text-xl text-stone-600 font-light">
+			IT Architect & Full-Stack Developer at <a href="https://software.beyonder.eu" class="text-accent hover:underline decoration-2 underline-offset-4">BEYONDER</a>
+		</p>
+	</header>
+
+	<main class="space-y-20">
+		<section id="about" class="grid lg:grid-cols-[1fr_2fr] gap-8 md:gap-12">
+			<h2 class="text-sm uppercase tracking-widest text-stone-500 font-semibold lg:pt-1">About</h2>
+			<div class="prose prose-stone max-w-none text-stone-700 leading-relaxed space-y-4">
+				<p>
+					I am a software engineer with a strong foundation in building scalable, secure web applications. 
+					In early 2024, I transitioned into an <strong>IT Architect</strong> role at BEYONDER (formerly Ambient Innovation), 
+					where I bridge high-level system design with hands-on development.
+				</p>
+				<p>
+					My academic background includes a B.Sc. in Computer Science and an M.Eng. in Information Systems Engineering. 
+					My Master's thesis focused on <strong>security standards</strong>, an area I remain deeply passionate about 
+					and integrate into my daily architectural decisions.
+				</p>
+			</div>
+		</section>
+
+		<section id="work" class="grid lg:grid-cols-[1fr_2fr] gap-8 md:gap-12">
+			<h2 class="text-sm uppercase tracking-widest text-stone-500 font-semibold lg:pt-1">Selected Work</h2>
+			<div class="space-y-12">
+				<div class="group">
+					<h3 class="text-lg font-semibold mb-2 group-hover:text-accent transition-colors">BEYONDER Projects</h3>
+					<p class="text-stone-600 mb-4">
+						Leading architectural efforts on mission-critical platforms:
+					</p>
+					<ul class="list-none space-y-4 border-l-2 border-stone-200 pl-4">
+						<li>
+							<span class="font-medium text-stone-900 block">Empto</span>
+							<span class="text-sm text-stone-600">A complex platform for optimizing industrial waste disposal processes.</span>
+						</li>
+						<li>
+							<span class="font-medium text-stone-900 block">BlueOak (DRWN)</span>
+							<span class="text-sm text-stone-600">Cloud-based self-service platform for media budget optimization and automation.</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="group">
+					<h3 class="text-lg font-semibold mb-2 group-hover:text-accent transition-colors">Open Source</h3>
+					<p class="text-stone-600 mb-4">
+						Active contributor to the developer community, focusing on security and developer tooling.
+					</p>
+					<div class="grid md:grid-cols-2 gap-6">
+						<a href="https://github.com/mastacheata/trivy-plugin-gitlab-codequality" class="block p-4 rounded-lg border border-stone-200 hover:border-accent transition-all group/card">
+							<span class="font-medium text-stone-900 block mb-1">trivy-plugin-gitlab-codequality</span>
+							<span class="text-sm text-stone-600">Bridging security scanning and GitLab CI/CD. Highlights my focus on security standards and automation.</span>
+						</a>
+						<div class="block p-4 rounded-lg border border-stone-200">
+							<span class="font-medium text-stone-900 block mb-1">Ambient Toolbox</span>
+							<span class="text-sm text-stone-600">Broad contributions to internal and public tooling at BEYONDER, improving DX and application stability.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="freelance" class="grid lg:grid-cols-[1fr_2fr] gap-8 md:gap-12">
+			<h2 class="text-sm uppercase tracking-widest text-stone-500 font-semibold lg:pt-1">Freelance & Legacy</h2>
+			<div class="space-y-8 text-stone-700 leading-relaxed">
+				<div>
+					<h3 class="text-lg font-semibold mb-2">Online Radio Infrastructure</h3>
+					<p class="text-stone-600">
+						Since 2008, I have partnered with small and medium-sized broadcasters to build robust streaming foundations. 
+						My work focused on infrastructure setup, automation through SAM Broadcaster, and developing high-performance station websites tailored for the unique needs of live audio.
+					</p>
+				</div>
+				<div class="p-4 rounded-lg border border-stone-200 bg-stone-50/50">
+					<h3 class="text-lg font-semibold mb-2">sam-song.info <span class="text-xs font-normal text-stone-400 uppercase tracking-wider ml-2">(2010s — 2023)</span></h3>
+					<p class="text-stone-600 text-sm mb-3">
+						A specialized web service enabling hundreds of online radio stations to bridge their broadcast automation with social media.
+					</p>
+					<p class="text-stone-600 text-sm italic">
+						Built in PHP, the platform managed complex integrations with the legacy Twitter and Facebook APIs. 
+						The service was a staple in the independent radio community for over a decade until it was retired in 2023 due to prohibitive changes in the social media API landscape.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="hobbies" class="grid lg:grid-cols-[1fr_2fr] gap-8 md:gap-12">
+			<h2 class="text-sm uppercase tracking-widest text-stone-500 font-semibold lg:pt-1">Beyond the Code</h2>
+			<div class="grid md:grid-cols-2 gap-8">
+				<div>
+					<h3 class="font-medium mb-2">Cycling</h3>
+					<p class="text-stone-600 text-sm leading-relaxed">
+						Whether it's a fast road ride or exploring new trails, cycling is my way to reset. 
+						The geometry of a bike is as fascinating to me as the architecture of a software system.
+					</p>
+				</div>
+				<div>
+					<h3 class="font-medium mb-2">Photography</h3>
+					<p class="text-stone-600 text-sm leading-relaxed">
+						Capturing moments through the lens. I often handle team photography at BEYONDER, 
+						applying the same attention to detail I use in code to visual storytelling.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="grid lg:grid-cols-[1fr_2fr] gap-8 md:gap-12">
+			<h2 class="text-sm uppercase tracking-widest text-stone-500 font-semibold lg:pt-1">Contact</h2>
+			<div class="space-y-8">
+				<p class="text-stone-700 leading-relaxed">
+					I'm always happy to connect with other developers, whether it's about software architecture, security, or cycling. 
+					The best way to meet me in person is at a <a href="https://www.meetup.com/koln-django-meetup-gruppe/" class="text-accent hover:underline">DjangoCologne Meetup</a>—come say hi!
+				</p>
+				
+				<div class="grid md:grid-cols-2 gap-6">
+					<div>
+						<h3 class="text-xs uppercase tracking-wider text-stone-500 font-bold mb-3">Professional</h3>
+						<ul class="space-y-2 text-sm">
+							<li><a href="https://software.beyonder.eu/menschen/alle-mitarbeiterinnen/benedikt-bauer" class="text-stone-600 hover:text-accent transition-colors">Work Portfolio</a></li>
+							<li><a href="https://www.linkedin.com/in/benedikt-bauer/" class="text-stone-600 hover:text-accent transition-colors">LinkedIn</a></li>
+							<li><a href="https://github.com/mastacheata" class="text-stone-600 hover:text-accent transition-colors">GitHub</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="text-xs uppercase tracking-wider text-stone-500 font-bold mb-3">Social</h3>
+						<ul class="space-y-2 text-sm">
+							<li><a href="https://bsky.app/profile/mastacheata.de" class="text-stone-600 hover:text-accent transition-colors">BlueSky</a></li>
+							<li><a href="https://techhub.social/@mastacheata" class="text-stone-600 hover:text-accent transition-colors">Fediverse</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="mt-24 pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-stone-500">
+		<div class="flex gap-6">
+			<a href="https://github.com/mastacheata" class="hover:text-accent transition-colors">GitHub</a>
+			<a href="https://software.beyonder.eu/menschen/alle-mitarbeiterinnen/benedikt-bauer" class="hover:text-accent transition-colors">Company Profile</a>
+		</div>
+		<p>&copy; {new Date().getFullYear()} Benedikt Bauer</p>
+	</footer>
+	</div>
+</Layout>
+
+<style>
+	a {
+		transition: all 0.2s ease;
+	}
+	.prose strong {
+		color: var(--color-accent);
+		font-weight: 600;
+	}
+</style>
+
+<script>
+	const logoContainer = document.getElementById('logo-container');
+	
+	const updateOpacity = () => {
+		if (!logoContainer) return;
+		
+		const scrollY = window.scrollY;
+		const fadeStart = 0;
+		const fadeEnd = 500; // Complete fade transition over 500px
+		const minOpacity = 0.1;
+		const maxOpacity = 1;
+		
+		let opacity = maxOpacity - (scrollY / fadeEnd);
+		
+		if (opacity < minOpacity) opacity = minOpacity;
+		if (opacity > maxOpacity) opacity = maxOpacity;
+		
+		logoContainer.style.opacity = opacity.toString();
+	};
+
+	window.addEventListener('scroll', updateOpacity, { passive: true });
+	// Initialize on load
+	updateOpacity();
+</script>
